@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalyani's Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .main {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+        }
+
+        .post h2 {
+            color: #6c5ce7;
+            margin-top: 0;
+        }
+
+        .post p.date {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color:orangered; 
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Kalyani's Blog</h1>
+        <p>Thoughts, stories, and ideas.</p>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="post">
+                <h2>My First Blog Post</h2>
+                <p class="date">April 16, 2025</p>
+                <p>Hello everyone! Welcome to my blog. I am very excited to start sharing my ideas,thoughts and journey here. Stay tuned for more posts about coding, travel, and creativity!</p>
+            </div>
+
+            <div class="post">
+                <h2>Learning Front-End Development</h2>
+                <p class="date">April 10, 2025</p>
+                <p>This week, I’ve been diving into HTML, CSS, and JavaScript. It’s so rewarding to build beautiful, interactive pages from scratch. Next up: responsive design and animations!</p>
+            </div>
+
+            <div class="post">
+                <h2>My Favorite Travel Destinations</h2>
+                <p class="date">March 28, 2025</p>
+                <p>I absolutely love exploring new places. Some of my favorites are Denmark, Paris,Turkey and swirzerland. Each has its own charm, culture, and energy. I’ll be sharing travel guides soon!</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>About Me</h3>
+            <p>Hi! I'm Kalyani — a software engineering grad who loves web development, travel, and writing. I created this blog to share my thoughts and connect with like-minded people!</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Kalyani's Blog | Built with ❤ using HTML & CSS
+    </footer>
+
+</body>
+</html>
